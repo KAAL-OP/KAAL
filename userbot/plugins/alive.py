@@ -1,4 +1,3 @@
-# Made by @Hackintush
 
 import asyncio
 import time
@@ -13,15 +12,13 @@ from userbot.utils import admin_cmd
 from . import *
 
 #### Variables ####
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "𑀥ᥲrκ Vᥱᥒ᧐ⲙ"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "𝐤𝐚𝐚𝐥 𝐚𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭"
 
 ALIVE_MSG = Config.ALIVE_MSG
 if ALIVE_MSG is None :
-    ALIVE_MSG = f"This is {DEFAULTUSER} Dark Venom Userbot"
+    ALIVE_MSG = f"This is {DEFAULTUSER} 𝐤𝐚𝐚𝐥 𝐔𝐬𝐞𝐫𝐛𝐨𝐭"
 
 ALIVE_PIC = Config.ALIVE_PHOTTO
-if ALIVE_PIC is None :
-    ALIVE_PIC = "https://telegra.ph/file/e6fe4a42cc9ccc08c9d32.jpg"
 
 botversion = "0.1"
 
@@ -51,13 +48,14 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 @borg.on(admin_cmd(pattern=r"alive"))
+@borg.on(sudo_cmd(pattern=r"alive"))
 async def alive(e):
     start = datetime.now()
     end = datetime.now()
     ping = (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - Lastupdate))
     cap = """
-**𑀥ᥲrκ Vᥱᥒ᧐ⲙ 𐌵sᥱrδ᧐ᴛ**
+**𝐤𝐚𝐚𝐥 𝐮𝐬𝐞𝐫𝐛𝐨𝐭**
 **{}**
 ✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵
 ╔════❰ Ⲃⲟⲧ Ⲓⲛϝⲟʀⲙⲁⲧⲓⲟⲛ ❱═❍⊱❁۪۪۪
@@ -69,7 +67,7 @@ async def alive(e):
 ║┣⪼ **Ⲃⲟⲧ Ⲣⲓⲛⳋ** - `{}
 ║┣⪼ **Ⲣⲩⲧⲏⲟⲛ** - `{}` 
 ║┣⪼ **Ⲧⲉⳑⲉⲧⲏⲟⲛ** - `{}` 
-║┣⪼ [✨𑀥ᥲrκ Vᥱᥒ᧐ⲙ 𐌵sᥱrδ᧐ᴛ✨](https://github.com/VENOM-USERBOT/DARK-VENOM/)
+║┣⪼ [✨𝐤𝐚𝐚𝐥 𝐮𝐬𝐞𝐫𝐛𝐨𝐭✨](https://t.me/Murat_30_God)
 ║╰━━━━━━━━━━━━━━━➣ ╚══════════════════❍⊱❁۪۪۪
 """.format(
         ALIVE_MSG,
@@ -93,6 +91,6 @@ CMD_HELP.update(
     {
         "alive": "**ALive**\
 \n\n**Syntax : **`.alive`\
-\n**Usage :** Check if 𑀥ᥲrκ Vᥱᥒ᧐ⲙ 𐌵sᥱrδ᧐ᴛ is alive"
+\n**Usage :** Check if userbot is alive"
     }
 )
