@@ -2,7 +2,7 @@
 from youtubesearchpython import VideosSearch
 
 from userbot import LOGS
-from userbot.utils import bash
+from userbot.utils import bot
 
 
 def ytsearch(query: str):
@@ -21,7 +21,7 @@ def ytsearch(query: str):
 
 
 async def ytdl(link: str):
-    stdout, stderr = await bash(
+    stdout, stderr = await bot(
         f'yt-dlp -g -f "best[height<=?720][width<=?1280]" {link}'
     )
     if stdout:
