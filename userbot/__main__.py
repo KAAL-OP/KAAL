@@ -8,7 +8,7 @@ import telethon.utils
 
 from telethon import TelegramClient
 
-from userbot import bot
+from userbot import bot ,call_py
 
 from userbot.utils import load_module, start_assistant
 
@@ -57,6 +57,7 @@ else:
     else:
 
         bot.start()
+        call_py.start()
 
 import glob
 
