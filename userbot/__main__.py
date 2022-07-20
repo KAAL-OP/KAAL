@@ -112,7 +112,7 @@ else:
 
     print("Assitant is Not Loading As U Have Disabled")
 
-print("DARK VENOM userbot AND YOUR ASSISTANT is Active Enjoy Join @Venom_Userbot_channel For Updates.")
+print("kaal userbot AND YOUR ASSISTANT is Active Enjoy Join @Murat_30_God For Updates.")
 
 if len(argv) not in (1, 3, 4):
 
