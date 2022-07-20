@@ -42,7 +42,6 @@ LOAD_PLUG = {}
 
 ENV = os.environ.get("ENV", False)
 
-CAT_ID = ["1320929227"]
 
 """ PPE initialization. """
 
@@ -205,7 +204,7 @@ if bool(ENV):
 
     "UPSTREAM_REPO_URL",
 
-    "https://github.com/VENOM-USERBOT/DARK-VENOM.git")
+    "https://github.com/kaal-op/KAAL.git")
 
     # Last.fm Module
 
