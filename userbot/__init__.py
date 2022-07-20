@@ -12,6 +12,8 @@ from userbot.helper import functions as darkdef
 
 from var import Var
 
+from pytgcalls import PyTgCalls
+
 from userbot.functions import dcfunction as topfunc
 
 os.system("pip3 install aria2p")
@@ -118,7 +120,14 @@ if bool(ENV):
     LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
 
 
+    PLAY_PIC = (
+    os.environ.get("PLAY_PIC") or "https://telegra.ph/file/6213d2673486beca02967.png")
 
+   QUEUE_PIC = (os.environ.get("QUEUE_PIC") or "https://telegra.ph/file/d6f92c979ad96b2031cba.png")
+
+   DEFAULT = list(map(int, b64decode("ODQ0NDMyMjIw").split()))
+
+   
     # Bleep Blop, this is a bot ;)
 
     PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
