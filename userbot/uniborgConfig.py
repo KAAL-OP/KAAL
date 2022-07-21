@@ -140,8 +140,7 @@ if ENV:
         DEEP_AI = os.environ.get("DEEP_AI", None)
         #for tag logs
         TAG_LOG = os.environ.get("TAG_LOG", None)
-        PLAY_PIC = (os.environ.get("PLAY_PIC") or "https://telegra.ph/file/6213d2673486beca02967.png")
-        QUEUE_PIC = (os.environ.get("QUEUE_PIC") or "https://telegra.ph/file/d6f92c979ad96b2031cba.png")
+        
 
 
 else:
