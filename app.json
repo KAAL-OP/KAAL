@@ -1,0 +1,61 @@
+{
+  "name": "kaal-Userbot",
+  "description": "[kaal-Userbot] userbot Telegram and vc music system",
+  "stack": "container",
+  "env": {
+    "API_KEY": {
+      "description": "fill API KEY,using  web my.telegram.org ",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "fill API Hash ,using web my.telegram.org",
+      "required": true
+    },
+    "TG_BOT_TOKEN_BF_HER": {
+      "description": "@Botfather bot token",
+      "required": false
+    },
+    "TG_BOT_USER_NAME_BF_HER": {
+      "description": "@Botfather bot username",
+      "required": false
+    },
+    "PRIVATE_GROUP_ID": {
+      "description": "log id",
+      "required": false
+    },
+     "STRING_SESSION": {
+      "description": " String Session di Grup » https://t.me/Murat_30_God",
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "description": "fill App heroku",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "fill Heroku API KEY  » https://dashboard.heroku.com/account",
+      "required": true
+    }
+  },
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
