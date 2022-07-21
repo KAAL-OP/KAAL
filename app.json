@@ -1,0 +1,52 @@
+{ 
+    "name": "KAAL Userbot", 
+    "logo": "", 
+    "description": "A Advanced Telegram userbot with vc system", 
+    "repository": "", 
+    "stack": "heroku-22", 
+    "env": { 
+        "API_ID": { 
+            "description": "Please Enter Your Telegram APi iD", 
+            "required": true, 
+            "value": "" 
+        }, 
+        "API_HASH": { 
+            "description":"Please Enter Your Telegram APi hash", 
+            "required": true, 
+            "value": "" 
+        }, 
+        "STRING_SESSION": { 
+            "description": "Your Account string", 
+            "required": true, 
+            "value":"" 
+        }, 
+        "PRIVATE_GROPUP_ID": { 
+            "description": "Your Private Group id must start from -100", 
+            "required": true, 
+            "value":"" 
+        }, 
+        "HEROKU_API_KEY": { 
+            "description": "Your heroku api", 
+            "required": true, 
+            "value":"" 
+        }, 
+        "HEROKU_APP_NAME": { 
+            "description": "Your app name", 
+            "value": "" 
+        }, 
+        "TG_BOT_TOKEN_BF_HER": { 
+            "description": "Your Bot Token", 
+            "value":"" 
+        }, 
+        "TG_BOT_USER_NAME_BF_HER": { 
+            "description": "Bot Username here", 
+            "value": "" 
+        } 
+  }, 
+  "addons": [{ 
+    "plan": "heroku-postgresql", 
+    "options": { 
+      "version": "12" 
+    } 
+  }] 
+}
