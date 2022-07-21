@@ -7,8 +7,8 @@ import telethon.utils
 from telethon import TelegramClient
 from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
 
-from Lucifer import LOGS, bot, kaalver
-from var import Var
+from userbot import LOGS, bot, kaalver
+from uniborgConfig import var import Var
 from userbot.utils import load_module,start_mybot, load_pmbot
 from pathlib import Path
 import telethon.utils
