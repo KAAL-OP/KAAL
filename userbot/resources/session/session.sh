@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # Ultroid - UserBot
-# Copyright (C) 2022 Man-Userbot
-#
+# Now in KAAL Userbot
 # This file is a part of < https://github.com/mrismanaziz/Man-Userbot/ >
 # PLease read the GNU Affero General Public License in <https://www.github.com/mrismanaziz/Man-Userbot/blob/main/LICENSE/>
 
@@ -18,7 +17,7 @@ apt-get update
 apt-get upgrade -y
 pkg upgrade -y
 pkg install python wget -y
-wget https://raw.githubusercontent.com/mrismanaziz/Man-Userbot/Man-Userbot/userbot/resources/session/string_session.py
+wget https://raw.githubusercontent.com/kaal-op/KAAL/KAAL/userbot/resources/session/string_session.py
 pip install telethon
 clear
 python3 string_session.py
