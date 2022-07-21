@@ -31,9 +31,7 @@ else:
     bot = TelegramClient(session_name, Var.APP_ID, Var.API_HASH)
 
     call_py = PyTgCalls(bot)
-except Exception as e:
-    print(f"STRING_SESSION - {e}")
-    sys.exit()
+
 
 
 Lastupdate = time.time()
