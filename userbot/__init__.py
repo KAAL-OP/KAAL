@@ -7,7 +7,7 @@ import os
 import sys
 from telethon.sessions import StringSession
 from telethon import TelegramClient
-from UniborgConfig import var import Var
+from uniborgConfig import var import Var
 from pytgcalls import PyTgCalls
 import time
 
