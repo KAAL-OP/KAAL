@@ -8,7 +8,7 @@ from telethon import TelegramClient
 from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
 
 from userbot import LOGS, bot, kaalver
-from userbot.uniborgConfig import Var
+from userbot.uniborgConfig import var as Var
 from userbot.utils import load_module,start_mybot, load_pmbot
 from pathlib import Path
 import telethon.utils
