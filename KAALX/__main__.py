@@ -8,7 +8,7 @@ import telethon.utils
 from telethon import TelegramClient
 from telethon.tl.functions.channels import InviteToChannelRequest, JoinChannelRequest
 
-from KAALX import PRIVATE_GROUP_ID, bot, kaalver
+from KAALX import bot, kaalver
 from KAALX.Config import Var
 from KAALX.utils import load_module,start_mybot, load_pmbot
 from pathlib import Path
